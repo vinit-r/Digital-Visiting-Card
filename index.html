@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Degital Contact</title>
+
+    <link rel="stylesheet" type="text/css" href="digital.css" />
+  </head>
+  <body>
+    <div class="bg-fade">
+      <div class="navigation">
+        <ul>
+          <li class="list active">
+            <a href="mailto:vinitr2021@gmail.com">
+              <span class="icon"><ion-icon name="mail"></ion-icon></span>
+              <span class="text">Email</span>
+            </a>
+          </li>
+          <li class="list">
+            <a
+              href="https://in.linkedin.com/in/vinit-pawar-a1864a245?trk=profile-badge"
+            >
+              <span class="icon"
+                ><ion-icon name="logo-linkedin"></ion-icon
+              ></span>
+              <span class="text">linkedIn</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="https://wa.me/7389461717">
+              <span class="icon"
+                ><ion-icon name="logo-whatsapp"></ion-icon
+              ></span>
+              <span class="text">WhatsApp</span>
+            </a>
+          </li>
+          <li class="list">
+            <a
+              href="https://twitter.com/VinitPawar2112?t=itVakTy8yTHpa0suQ_ZxUQ&s=08"
+            >
+              <span class="icon"
+                ><ion-icon name="logo-twitter"></ion-icon
+              ></span>
+              <span class="text">twitter</span>
+            </a>
+          </li>
+
+          <li class="list">
+            <!-- <a href="resume.html"> -->
+            <a href="https://github.com/vinit-r">
+              <span class="icon"><ion-icon name="logo-github"></ion-icon></span>
+              <span class="text">Profile</span>
+            </a>
+          </li>
+
+          <div class="indicator"></div>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      const list = document.querySelectorAll('.list');
+      function activeLink() {
+        list.forEach((item) => item.classList.remove('active'));
+        this.classList.add('active');
+      }
+      list.forEach((item) => item.addEventListener('click', activeLink));
+    </script>
+
+    <script
+      src="https://platform.linkedin.com/badges/js/profile.js"
+      async
+      defer
+      type="text/javascript"
+    ></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
